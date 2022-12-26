@@ -16,7 +16,9 @@
     ],
     "primaryColor": "#875A7B",
     "secondaryColor": "#00A09D",
-    "openLinkUrlPrefixes": ["*"]
+    "openLinkUrlPrefixes": [
+      "*"
+    ]
   },
   "urlFetchWhitelist": [
     "https://*.odoo.com/mail_plugin/get_translations",
@@ -50,5 +52,14 @@
     "https://odoo.com/mail_plugin/auth",
     "https://odoo.com/mail_plugin/auth/access_token",
     "https://iap-services.odoo.com/iap/mail_extension/enrich"
-  ]
+  ],
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Gmail",
+        "serviceId": "gmail",
+        "version": "v1"
+      }
+    ]
+  }
 }
